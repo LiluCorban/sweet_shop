@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cake Shop</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="left-side">
+            <img src="img/logo_text.png" alt="logo-text" id="logo-text" />
+          </div>
+          <ul class="right-side">
+            <li><a href="">Про нас</a></li>
+            <li><a href="#cake">Тортики</a></li>
+            <li><a href="#kontakt">Контакти</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="first">
+          <div id="img-box" class="wow animate__fadeInLeft animate__animated">
+            <img src="img/front.jpg" alt="front" id="front-img" />
+          </div>
+
+          <div class="wow animate__fadeInRight animate__animated" id="about-us">
+            <h1>Жаданий тортик</h1>
+            <p>
+              Крафтова кондитерська, Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Quisquam vel quae nisi odit sequi molestias
+              numquam mollitia exercitationem eligendi architecto voluptatum
+              unde dolorum cupiditate corporis iure saepe earum, quia aliquid?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              iusto nihil minus maiores laborum temporibus exercitationem amet
+              pariatur officia quos. Beatae, odio. Temporibus aliquid, animi
+              magnam placeat sed aut tempore. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ipsam distinctio enim placeat
+              tempore unde. Ab sunt cum soluta, incidunt adipisci ea, illo nisi
+              accusamus asperiores quaerat, dolores ratione aliquam a?
+            </p>
+          </div>
+        </section>
+        <section class="second">
+          <h2><a name="cake"></a> ТОРТИКИ</h2>
+          <div class="gallery">
+            <div class="card">
+              <img
+                src="img/cake.jpg"
+                alt=""
+                class="wow animate__flip animate__animated"
+              />
+              <div class="description">
+                <h3>Десерт Павлова</h3>
+                <p>
+                  торт-безе зі свіжими фруктами, особливо популярний у Новій
+                  Зеландії та Австралії
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/cake1.jpg" alt="" />
+              <div class="description">
+                <h3>Бісквіт</h3>
+                <p>солодка випічка з пухкою дрібнопористою структурою</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/cake3.jpg" alt="" />
+              <div class="description">
+                <h3>Капкейк</h3>
+                <p>американські кекси, найулюленіший десерт до дитячих свят</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/cake4.jpg" alt="" />
+              <div class="description">
+                <h3>Торт-фондан</h3>
+                <p>торт шоколадний, з плотною текстурою та насиченним смаком</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/cake2.jpg" alt="" />
+              <div class="description">
+                <h3>Торт-фігура</h3>
+                <p>торт на базі медових коржів, з ніжним кремом. Люба форма</p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="img/cake5.jpg"
+                alt=""
+                class="wow animate__flip animate__animated"
+              />
+              <div class="description">
+                <h3>Фруктові десерти</h3>
+                <p>
+                  десерти зі свіжими фруктами, для тих хто слідкую за калоріями
+                </p>
+              </div>
+            </div>
+
+            <div class="form-box">
+              <form action="" class="form">
+                <h2>Таку красу можна й замовити</h2>
+                <label for="name">Ваше ім'я</label>
+                <input type="text" name="name" id="name" />
+                <label for="phone">Ваш номер телефону</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  required
+                />
+                <label for="date">Оберіть дату, коли потрібен тортик</label>
+                <input type="date" />
+                <label for="time">Оберіть час, на який потрібен тортик</label>
+                <input type="time" min="09:00" max="20:00" />
+                <label for="choose">Оберіть жаданий тортик</label>
+                <select name="cake-name" id="cake-name">
+                  <option value="none" selected>Оберіть</option>
+                  <option value="pavlova">Десерт Павлова</option>
+                  <option value="pavlova">Бісквіт</option>
+                  <option value="pavlova">Капкейк</option>
+                  <option value="pavlova">Торт-фондан</option>
+                  <option value="pavlova">Торт-фігура</option>
+                  <option value="pavlova">Фруктові десерти</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <a name="kontakt"></a>
+        <div class="contact">
+          <div>
+            <img src="img/facebook.png" alt="#" id="facebook" />
+            <h3>facebook/zhadanyy_tortyk</h3>
+          </div>
+
+          <div class="box-logo">
+            <img src="img/pudding.png" alt="#" id="logo" />
+            <h3>Tel:+380 50 452 55 05</h3>
+          </div>
+          <div>
+            <img src="img/instagram.png" alt="#" id="instagram" />
+            <h3>@zhadanyy_tortyk</h3>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

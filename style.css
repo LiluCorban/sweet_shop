@@ -1,0 +1,293 @@
+body {
+  background-color: #edbaa6;
+  background-image: url(img/fon3.png);
+  background-size: cover;
+  color: #414042;
+  font-family: "Courier New", Courier, monospace;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wrapper header {
+  display: flex;
+  width: 100%;
+  background-color: #d6968b;
+  border-radius: 10px;
+}
+.wrapper header nav {
+  padding: 1%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.wrapper nav div.left-side {
+  width: 10%;
+  display: flex;
+  justify-content: start;
+}
+.wrapper nav div.left-side img#logo-text {
+  max-width: 100%;
+}
+
+.wrapper header nav ul.right-side {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.wrapper header nav ul.right-side li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+.wrapper header nav ul.right-side li a:hover {
+  color: #414042;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main section.first {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+main section.first div#img-box {
+  max-width: 40%;
+}
+
+main section.first img#front-img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 10px solid #d6968b;
+  border-radius: 20px;
+}
+main section.first div#about-us {
+  width: 40%;
+  padding: 20px;
+  background: #edbaa6a7;
+  border-radius: 20px;
+  border: 10px solid #d6968b;
+}
+main section.first div#about-us h1 {
+  font-size: 40px;
+  color: white;
+}
+main section.first div#about-us p {
+  font-size: 20px;
+  color: white;
+}
+
+main section.second {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+main section.second h2 {
+  font-size: 40px;
+  color: white;
+}
+main section.second div.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main section.second div.gallery div.card {
+  position: relative;
+  max-width: 25%;
+  margin: 20px;
+}
+main section.second div.gallery div.card:hover div.description {
+  display: block;
+}
+main section.second img {
+  max-width: 100%;
+  border: 10px solid #d6968b;
+  border-radius: 20px;
+}
+main section.second div.gallery div.description {
+  width: 90%;
+  height: fit-content;
+  position: absolute;
+  left: 3.5%;
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  background: #ffffffde;
+  padding: 5px;
+  border: 10px solid #d6968b;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+}
+main section.second div.form-box {
+  width: 40%;
+  margin-left: 26%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+main section.second div.form-box h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+main section.second form.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 10px solid #d88f82;
+  border-radius: 10px;
+}
+main section.second form.form input {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+main section.second form.form input:focus {
+  outline: 2px solid #d6968b;
+}
+main section.second form.form select {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Courier New", Courier, monospace;
+}
+main section.second form.form select:focus {
+  outline: 2px solid #d6968b;
+}
+.wrapper footer {
+  width: 100%;
+  background-color: #d6968b;
+  border-radius: 10px;
+}
+.wrapper footer div.contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.wrapper footer div.contact h3 {
+  white-space: nowrap;
+}
+.wrapper footer div.contact div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  padding: 5% 5% 2% 5%;
+}
+.wrapper footer div.contact div.box-logo {
+  padding: 3% 5% 2% 5%;
+}
+
+.wrapper footer div.contact div img#facebook {
+  width: 10%;
+}
+.wrapper footer div.contact div img#logo {
+  width: 30%;
+}
+.wrapper footer div.contact div img#instagram {
+  width: 10%;
+}
+
+@media (max-width: 900px) {
+  main section.second div.gallery div.card {
+    position: relative;
+    max-width: 40%;
+    margin: 20px;
+  }
+  main section.second div.form-box {
+    width: 80%;
+    margin-left: 5%;
+  }
+
+  .wrapper footer div.contact {
+    flex-wrap: wrap;
+  }
+  .wrapper footer div.contact div img#facebook {
+    width: 30%;
+  }
+  .wrapper footer div.contact div img#logo {
+    width: 35%;
+  }
+  .wrapper footer div.contact div img#instagram {
+    width: 30%;
+  }
+  .wrapper nav div.left-side {
+    width: 20%;
+  }
+}
+@media (max-width: 800px) {
+  main section.first {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .wrapper header nav ul.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  main section.first div#img-box {
+    max-width: 70%;
+  }
+  main section.first div#about-us {
+    width: 80%;
+    text-align: center;
+  }
+  .wrapper footer div.contact div.box-logo {
+    padding: 4% 5% 2% 5%;
+  }
+}
+@media (max-width: 700px) {
+  main section.second div.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main section.second div.gallery div.card {
+    position: relative;
+    max-width: 80%;
+    margin: 20px;
+  }
+
+  .wrapper nav div.left-side {
+    width: 30%;
+  }
+  main section.second div.form-box {
+    margin-left: 1%;
+  }
+}
+@media (max-width: 600px) {
+  main section.second div.form-box {
+    margin-left: 0;
+  }
+ 
+.wrapper footer div.contact {
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper footer div.contact div {
+  padding: 2%;
+  width: 80%;
+ 
+}
+}
